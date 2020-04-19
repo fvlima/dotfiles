@@ -35,9 +35,6 @@ else
 	source ~/.bashrc
 fi
 
-# copy spaceway color
-wget https://raw.githubusercontent.com/Gavinok/SpaceWay.vim/master/colors/spaceway.vim -P ~/.vim/colors/
-
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +BundleInstall

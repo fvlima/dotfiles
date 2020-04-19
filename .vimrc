@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'benmills/vimux'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'sickill/vim-monokai'
+Plugin 'vim-scripts/nuvola.vim'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
@@ -20,7 +21,6 @@ call vundle#end()
 filetype plugin indent on 
 
 set splitbelow "set new window to open below
-set background=dark 
 set number
 set ruler
 set autoread
@@ -31,8 +31,8 @@ set cursorline
 
 syntax on
 syntax enable
-"colorscheme monokai
-colorscheme spaceway
+colorscheme monokai
+" colorscheme nuvola
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
