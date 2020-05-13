@@ -9,6 +9,9 @@ pyenvinit='
 \neval "$(pyenv init -)"
 \neval "$(pyenv virtualenv-init -)"'
 
+xtermcolor='
+\nexport TERM="xterm-256color"'
+
 # copy aliases and vim/tmux configs
 cp .bash_aliases ~
 chmod 644 ~/.bash_aliases
@@ -22,6 +25,7 @@ if [ $osname = "Darwin" ]; then
 
 	# copy pyenv init to .bash_profile
 	echo -e $pyenvinit >> ~/.bash_profile
+	echo -e $xtermcolor >> ~/.bash_profile
 	source ~/.bash_profile
 else
 	# install libs on debian's like 
