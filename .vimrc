@@ -16,6 +16,8 @@ Plugin 'inkarkat/vim-mark'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'dyng/ctrlsf.vim'
 Plugin '907th/vim-auto-save'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jonathanfilip/vim-lucius'
 
 call vundle#end()          
 filetype plugin indent on 
@@ -33,6 +35,8 @@ syntax on
 syntax enable
 colorscheme monokai
 " colorscheme nuvola
+" colorscheme lucius
+" LuciusLightLowContrast
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
