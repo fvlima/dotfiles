@@ -8,9 +8,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'benmills/vimux'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'sickill/vim-monokai'
-Plugin 'vim-scripts/nuvola.vim'
+Plugin 'jnurmine/Zenburn'
+Plugin 'nvie/vim-flake8'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'mhinz/vim-mix-format'
 Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
 Plugin 'Valloric/YouCompleteMe'
@@ -33,10 +34,10 @@ set cursorline
 
 syntax on
 syntax enable
-colorscheme monokai
-" colorscheme nuvola
-" colorscheme lucius
-" LuciusLightLowContrast
+set background=dark
+set t_Co=256
+colorscheme zenburn
+
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
