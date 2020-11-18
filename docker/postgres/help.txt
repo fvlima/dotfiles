@@ -1,0 +1,14 @@
+# craete database and users with psql
+
+psql -U postgres -h localhost
+
+create database db_name;
+create user user_name with password 'password';
+grant all privileges on database db_name to user_name;
+
+\q
+
+
+# restore database
+
+sudo pg_restore -v --no-acl --no-owner -U user_name -h localhost -d db_name < dump_file
