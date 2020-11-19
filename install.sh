@@ -29,7 +29,7 @@ if [ $osname = "Darwin" ]; then
 	source ~/.bash_profile
 else
 	# install libs on debian's like 
-	sudo apt install gnupg oathtool git vim ripgrep tmux wget pgcli universal-ctags curl cmake
+	sudo apt install gnupg oathtool git vim ripgrep tmux wget libpq-dev libsqlite3-dev pgcli universal-ctags curl cmake
 
 	# install pyenv
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
